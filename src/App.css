@@ -1,38 +1,114 @@
 .App {
-  text-align: center;
+  background-color: black;
+  height: 120vh;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calc_body {
+  width: 600px;
+  border: 2px solid orange;
+  height: 880px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.calc_input {
+  border-bottom: 2px solid white;
+  height: 100px;
   color: white;
+  display: flex;
+  justify-content: right;
+}
+.inputValue {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.calcC_btn {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: black;
+  border: 2px solid orange;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+.calcC_btn:hover {
+  background: orange;
+  color: black;
+  transition: 1s;
 }
 
-.App-link {
-  color: #61dafb;
+.calcNums_btns {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.calc_num {
+  flex: 1 0 33.333%;
+
+  height: 60px;
+  margin: 20px;
+  background-color: black;
+  border: 2px solid orange;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+.calc_num:hover {
+  background: orange;
+  color: black;
+  transition: 1s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calc_result {
+  flex: 0 1 10%;
+  height: 60px;
+
+  background-color: black;
+  border: 2px solid orange;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+.inputValue_result {
+  color: orange;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.calc_result:hover {
+  background: orange;
+  color: black;
+  transition: 1s;
+}
+.calcMainbtns {
+  display: flex;
+}
+.calcPlusMinus_btn {
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: black;
+  border: 2px solid orange;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  width: 100px;
+  height: 100px;
+}
+.calcPlusMinus_btn:hover {
+  background: orange;
+  color: black;
+  transition: 1s;
 }
